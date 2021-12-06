@@ -24,9 +24,6 @@
 # Streamlit dependencies
 import streamlit as st
 import joblib,os
-from annotated_text import annotated_text
-from sklearn.metrics import accuracy_score
-import plotly.figure_factory as ff
 
 # Data dependencies
 import pandas as pd
