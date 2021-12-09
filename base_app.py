@@ -24,6 +24,7 @@
 # Streamlit dependencies
 import streamlit as st
 import joblib,os
+from PIL import Image
 
 # Data dependencies
 import pandas as pd
@@ -43,8 +44,8 @@ def main():
 
 	# Creates a main title and subheader on your page -
 	# these are static across all pages
-	st.title("Climate Change Classifier :earth_africa:")
-	st.header("_Where do we stand on climate change?_")
+	st.title("Tweetifier :earth_africa:")
+	st.header("_Climate Change Classifier_")
 
 	# Creating sidebar with selection box -
 	# you can create multiple pages this way
@@ -70,7 +71,7 @@ def main():
 	if selection == "Information":
 		st.subheader("General Information")
 		# You can read a markdown file from supporting resources folder
-		st.markdown("With our **Linear Support Vector Classification Model** you will be able to predict whether or not a person believes in climate change with 74% accuracy.")
+		st.markdown("With our **Linear Support Vector Classification Model** you will be able to predict whether or not a person believes in climate change with high accuracy.")
 		st.markdown("It's fairly simple to predict, just head over to the **Prediction** option and follow the instructions")
 		st.markdown("")
 		st.markdown("")
